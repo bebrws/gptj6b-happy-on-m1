@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-# Default: THIS WORKS
-# NEDS:
 # export PYTORCH_ENABLE_MPS_FALLBACK=1
 
 from transformers import GPTJForCausalLM, AutoTokenizer
@@ -11,6 +9,9 @@ print("Created model")
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
 print("Created tokenizer")
 prompt = (
+    "How do I create a thread in GoLang?"
+)
+tougherprompt = (
     """
 function reverse_array() {
     # Usage: reverse_array "array"

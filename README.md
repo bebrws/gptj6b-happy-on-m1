@@ -48,6 +48,12 @@ arch -arm64 brew install pkgconfig
 
 
 cd ../../../../../../ # Back to root dir
+
+# run the test code
+export PYTORCH_ENABLE_MPS_FALLBACK=1
+python gptjex.py
+
+
 ```
 
 If you run now you will see errors about MPS not supporting different things:
