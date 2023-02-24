@@ -15,7 +15,8 @@ Steps:
 
 ```
 # set up conda for fish
-~/miniforge3/bin/conda init zsh
+export PATH="$HOME/miniforge3/bin/:$PATH"
+conda init zsh
 
 # create and use a new env
 conda create --name tf python=3.9
